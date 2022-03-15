@@ -6,70 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="public/css/main.min.css">
     <title>Time tracking dashboard</title>
 </head>
 <body>
-    
-    <header>
-
-    </header>
 
     <main>
-        Report for
-        Jeremy Robson
+        
+        <div class="cards">
 
-        Daily
-        Weekly
-        Monthly
+            <!-- Profile Card -->
+            <div class="card__profile">
+                <div class="card__profile-name">
+                    Report for
+                    Jeremy Robson
+                </div>
+                <div class="card__profile-categories">
+                    Daily
+                    Weekly
+                    Monthly
+                </div>
+            </div>
 
-        Work
-        5hrs <!-- daily -->
-        Previous - 7hrs <!-- daily -->
-        32hrs <!-- weekly -->
-        Previous - 36hrs <!-- weekly -->
-        103hrs <!-- monthly -->
-        Previous - 128hrs <!-- monthly -->
+            <!-- Work Card -->
+            <div class="card card--work">
+                <div class="card__img"></div>
+                <img src="public/images/icon-work.svg" alt="work bag icon">
+            </div>
+            <div class="card__info">
+                <div class="card__info-category">
+                    <h2>Work</h2>
+                    <img src="public/images/icon-ellipsis.svg" alt="3 dots icon">
+                    <p class="hours-current"></p>
+                    <p class="category-toggle">Category Toggle</p>
+                </div>
+            </div>
+        
+            <!-- Play Card -->
+            <div class="card card--play">
+                <div class="card__img"></div>
+                    <img src="public/images/icon-play.svg" alt="console controller icon">
+                <div class="card__info">
+                    <div class="card__info-category">
+                        <h2>Work</h2>
+                        <img src="public/images/icon-ellipsis.svg" alt="3 dots icon">
+                        <p class="hours-current"></p>
+                        <p class="category-toggle">Category Toggle</p>
+                    </div>
+                </div>
+            </div>
 
-        Play
-        1hr <!-- daily -->
-        Previous - 2hrs <!-- daily -->
-        10hrs <!-- weekly -->
-        Previous - 8hrs <!-- weekly -->
-        23hrs <!-- monthly -->
-        Previous - 29hrs <!-- monthly -->
+            <!-- Study Card -->
+            <div class="card card--study">
+                <div class="card__img"></div>
+                    <img src="public/images/icon-study.svg" alt="book icon">
+                <div class="card__info">
+                    <div class="card__info-category">
+                        <h2>Work</h2>
+                        <img src="public/images/icon-ellipsis.svg" alt="3 dots icon">
+                        <p class="hours-current"></p>
+                        <p class="category-toggle">Category Toggle</p>
+                    </div>
+                </div>
+            </div>
 
-        Study
-        0hrs <!-- daily -->
-        Previous - 1hr <!-- daily -->
-        4hrs <!-- weekly -->
-        Previous - 7hrs <!-- weekly -->
-        13hrs <!-- monthly -->
-        Previous - 19hrs <!-- monthly -->
+            <!-- Exercise Card -->
+            <div class="card card--exercise">
+                <div class="card__img"></div>
+                    <img src="public/images/icon-exercise.svg" alt="person running icon">
+                <div class="card__info">
+                    <div class="card__info-category">
+                        <h2>Work</h2>
+                        <img src="public/images/icon-ellipsis.svg" alt="3 dots icon">
+                        <p class="hours-current"></p>
+                        <p class="category-toggle">Category Toggle</p>
+                    </div>
+                </div>
+            </div>
 
-        Exercise
-        1hr <!-- daily -->
-        Previous - 1hr <!-- daily -->
-        4hrs <!-- weekly -->
-        Previous - 5hrs <!-- weekly -->
-        11hrs <!-- monthly -->
-        Previous - 18hrs <!-- monthly -->
+            <!-- Social Card -->
+            <div class="card card--social">
+                <div class="card__img"></div>
+                    <img src="public/images/icon-social.svg" alt="heart with cross icon">
+                <div class="card__info">
+                    <div class="card__info-category">
+                        <h2>Work</h2>
+                        <img src="public/images/icon-ellipsis.svg" alt="3 dots icon">
+                        <p class="hours-current"></p>
+                        <p class="category-toggle">Category Toggle</p>
+                    </div>
+                </div>
+            </div>
 
-        Social
-        1hr <!-- daily -->
-        Previous - 3hrs <!-- daily -->
-        5hrs <!-- weekly -->
-        Previous - 10hrs <!-- weekly -->
-        21hrs <!-- monthly -->
-        Previous - 23hrs <!-- monthly -->
+            <!-- Self Care Card -->
+            <div class="card card--care">
+                <div class="card__img"></div>
+                    <img src="public/images/icon-self-care.svg" alt="work bag icon">
+                <div class="card__info">
+                    <div class="card__info-category">
+                        <h2>Work</h2>
+                        <img src="public/images/icon-ellipsis.svg" alt="3 dots icon">
+                        <p class="hours-current"></p>
+                        <p class="category-toggle">Category Toggle</p>
+                    </div>
+                </div>
+            </div>
 
-        Self Care
-        0hrs <!-- daily -->
-        Previous - 1hr <!-- daily -->
-        2hrs <!-- weekly -->
-        Previous - 2hrs <!-- weekly -->
-        7hrs <!-- monthly -->
-        Previous - 11hrs <!-- monthly -->
+        </div>
 
     </main>
 
